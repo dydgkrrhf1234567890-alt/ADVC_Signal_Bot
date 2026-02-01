@@ -1,6 +1,9 @@
 import genesis_core
+import aladdin_shield
 import time
 import random
+# 🛡️ 알라딘 방패 장착 (리스크 관리 시스템 가동)
+bot_shield = aladdin_shield.AladdinShield()
 
 # ======================================================
 # 💎 ADVC (AdventureV Omega) Algorithmic Trading Signal
