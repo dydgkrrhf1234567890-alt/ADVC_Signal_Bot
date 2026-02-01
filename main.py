@@ -1,3 +1,4 @@
+import genesis_core
 import time
 import random
 
