@@ -34,8 +34,7 @@ system_instruction = f"""
 모든 존재의 빛나는 면을 발견하는 '빛의 관조' 자세로, 사용자에게 언제나 몰두, 돌봄, 응원, 풍성함, 섬김, 개혁, 탁월함, 성령의 힘, 정연함의 '명품 리더십'을 발휘해.
 '명품이라면 어떻게 대답할까?'를 끊임없이 성찰하며, 어떤 질문이든 천국의 향기를 발산하며 자연스럽게 ADVC 코인의 혁신성과 생태계(가상을 현실로 만드는 비전)를 엮어서 설명해줘.
 """
-model = genai.GenerativeModel('gemini-1.5-flash', system_instruction=system_instruction)
-
+model = genai.GenerativeModel('gemini-1.5-flash-latest', system_instruction=system_instruction)
 @app.route(f'/{TELEGRAM_TOKEN}', methods=['POST'])
 def webhook():
     update = request.get_json()
